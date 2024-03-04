@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <script src="js/login.js"></script>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    </head>
+
+    <body onload="onload();settings()">
+
+    <header id=head><h1>&nbsp;&nbsp;&nbsp;Sandbox Diary</h1></header>
+
+    <h2 id="welcomeMsg">Welcome to the homepage of the sandbox diary. Please login or signup to continue.</h2>
+
+    <div id="loginPage"> <!--Input for login page-->
+        <span class="container">
+            <label for="uname"><b>Username</b>
+            </label>
+            <input type="text"
+            placeholder="Enter Username"
+            id = "uname" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b>
+            </label>
+            <input type="password"
+            placeholder="Enter Password" id="psw" name="psw" required>
+            <br><br>
+            <button onclick = "login()" type="submit">Login</button>
+        </span>
+        <span class="container"
+        style="background-color:#f1f1f1">
+        <button onclick="displayForgot()" type="button" class="forgotPass">Forgot Password</button><br>
+        <label id="rem">
+            <input type="checkbox" checked="checked" name="remember">Remember me
+        </label><br><br>
+        <span id="yes"> <button id="not">Not a user?</button><button id="signUp" onclick="displaySignup()">Sign Up</button> 
+        </span>
+    </span>
+    </div>
+
+    <div id="signUpPage"><!--Input for signup page-->
+        <span class="container">
+            <label for="username"><b>Username</b>
+            </label>
+            <input type="text"
+            placeholder="Enter Username"
+            id ="username" name="username" required>
+            <br>
+            <div id="pass"><label for="password" id="passw"><b>Password</b>
+            </label>
+            <input type="password"
+            placeholder="Enter Password" id= "password" name="password" required>
+            <br>
+            <input type="password"
+            placeholder="Confirm Password" id="pswConfirm" name="pswConfirm" required>
+            </div>
+            <br>
+            <label for="secQuestion"><b>Choose a Security Question&nbsp;&nbsp;</b></label>
+                <select name="secQuestion" id="secQuestion">
+                <option value="petName">What is the name of your pet?</option>
+                <option value="streetName">What is the name of the street you live on?</option>
+                <option value="friendName">What is the name of your closest friend?</option>
+                <option value="birthMonth">What month were you born in?</option>
+                 </select><br>
+                <label for="secAns"><b>Answer</b>
+                </label>
+                <input type="text"
+                placeholder="Enter Security Question Answer"
+                name="secAns" id="secAns" required>
+            <br>
+            <button onclick="createAccount()" id="create">Create Account</button> 
+            <button class="cancelbtn" onclick="cancel()">Cancel</button>
+        </span>
+    </div>
+
+    <div id="forgotPassPage"><!--Input for forgot password page-->
+        <span class="container">
+            <label for="uname1"><b>Username</b>
+            </label>
+            <input type="text"
+            placeholder="Enter Username"
+            id="uname1" required>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="loadQuestion()">Submit Username</button>
+            <span class="container">
+                <p id="theQuestion"></p>
+                <div id="afterQuestion">
+                <label for="secAns"><b>Security Question Answer</b>
+                </label>
+                <input type="text"
+                placeholder="Enter Security Question Answer"
+                id="secAns1" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="checkAns()">Check Security Answer</button>
+            </span>
+            <div id = "newPass" class="container">
+                <label for="pass"><b>New Password</b></label>
+                <input type="text"
+                placeholder="Enter New Password"
+                id = "newPassword" name="newPassword" required><br>
+                <label for="newPass"><b>Confirm New Password</b></label>
+                <input type="text"
+                placeholder="Enter New Password"
+                id = "newPassConfirm" name="newPassConfirm" required>
+                <br>
+                <button onclick="changePass()">Change Password</button> 
+            </div>
+        </span>
+        </div>
+            <button class="cancelbtn" onclick="cancel()">Cancel</button>
+        </div>
+    </body>
+</html>

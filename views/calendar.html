@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Diary: Calendar</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body onload="defaultWeather();displayDefaultCalendar();settings()">
+    <header id="head"><button id="out"  onclick="redirect(1)";>Log out</button><h1>&nbsp;&nbsp;&nbsp;Sandbox Diary</h1></header>
+    <div class="back" onclick="redirect(2)";><button>Back</button></div>
+
+    <h1 id="title">&nbsp;&nbsp;&nbsp;Calendar & Weather Forecast</h1>
+
+    <div id="city"><button type="button" id="getWeather" onclick="getWeather()">Get Weather</button>
+    <p id="input">City: <input type="text" id="cityInput" placeholder="Please search for a city/country"></p>
+    <h1 id="cityName">Toronto</h1></div>
+
+    <div id="Weather">
+        <div id="IndividualWeatherDay">
+            <div id="top">
+                <div id="cal">
+                <div id="calendar-container" onload=displayDefaultCalendar()>
+                    <div id="calendar-header">
+                        <button class="btn prev-month" id="prev" onclick="prevMonth()">&#9664;</button>
+                        <span id="current-month-year"></span>
+                        <button class="btn next-month" id="next" onclick="nextMonth()">&#9654;</button>
+                    </div>
+                    <table id="calendar-dates">
+                        <thead>
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="tasksManager">
+                    <button id="viewTasksBtn" onclick="viewTask()"> View all tasks </button>
+                    <div id="taskList"></div>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i id="likeDislike" onclick="myFunction(this)" class="fa fa-thumbs-up"
+                        style="font-size: 100px;color: blue; margin-right: 100px; margin-top: 50px;"></i>
+                </div>
+                </div>
+
+                <div id="alert-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="modal-text"></p>
+                    </div>
+                </div>
+
+                <div id="day1">
+                    <h1 id=exactDateDay1></h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon1" />
+                        <div id="description1">Cloudy</div>
+                    </div>
+                    <div id="temp1">Temp:</div>
+                    <div id="humidity1">Humidity:</div>
+                    <div id="wind1">Wind speed:</div>
+                    <div id="feelsLike1">Wind speed:</div>
+                    <div id="advice1">Advice of the day :</div>
+                </div>
+
+            </div>
+
+            <div id="forecastedDays">
+
+                <div id="day2">
+                    <h1 id=exactDateDay2></h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon2" />
+                        <div id="description2">Cloudy</div>
+                    </div>
+                    <div id="temp2">Temp:</div>
+                    <div id="humidity2">Humidity:</div>
+                    <div id="wind2">Wind speed:</div>
+                    <div id="feelsLike2">Wind speed:</div>
+                    <div id="advice2">Advice of the day :</div>
+                </div>
+
+                <div id="day3">
+                    <h1 id=exactDateDay3></h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon3" />
+                        <div id="description3">Cloudy</div>
+                    </div>
+                    <div id="temp3">Temp:</div>
+                    <div id="humidity3">Humidity:</div>
+                    <div id="wind3">Wind speed:</div>
+                    <div id="feelsLike3">Wind speed:</div>
+                    <div id="advice3">Advice of the day :</div>
+                </div>
+
+                <div id="day4">
+                    <h1 id=exactDateDay4></h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon4" />
+                        <div id="description4">Cloudy</div>
+                    </div>
+                    <div id="temp4">Temp:</div>
+                    <div id="humidity4">Humidity:</div>
+                    <div id="wind4">Wind speed:</div>
+                    <div id="feelsLike4">Wind speed:</div>
+                    <div id="advice4">Advice of the day :</div>
+                </div>
+
+                <div id="day5">
+                    <h1 id=exactDateDay5></h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon5" />
+                        <div id="description5">Cloudy</div>
+                    </div>
+                    <div id="temp5">Temp:</div>
+                    <div id="humidity5">Humidity:</div>
+                    <div id="wind5">Wind speed:</div>
+                    <div id="feelsLike5">Wind speed:</div>
+                    <div id="advice5">Advice of the day :</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/weather.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+
+</html>

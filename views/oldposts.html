@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Sandbox Diary: Old Posts </title>
+  <link rel="stylesheet" href="css/oldposts.css" type="text/css">
+  <script src="js/posts.js" type="text/javascript"></script>
+</head>
+
+<body onload="settings()">
+
+  <header id="head"><button id="out" onclick="redirect(1)";>Log out</button><h1 id="heade">&nbsp;&nbsp;&nbsp;Sandbox Diary</h1></header>
+  
+  <div class="back" onclick="redirect(2)";><button id="backbut">Back</button></div>
+
+  <div id="click"><button onclick="view()">VIEW</button>
+  <button onclick="removeItem()">DELETE</button></div>
+
+  <div id="post">
+  <h2 id="output"></h2>
+  <div><h2 id="output2"></h2></div>
+  </div>
+
+  <div id="msg"><pre></pre></div>
+</body>
+</html>

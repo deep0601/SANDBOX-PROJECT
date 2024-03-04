@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sandbox Diary: Settings</title>
+    <link rel="stylesheet" href="css/settings.css">
+    <script src="js/settings.js"></script>
+</head>
+
+<body onload="settings()">
+
+    <header id="head"><button id="out" onclick="logout()">Log out</button><h1>&nbsp;&nbsp;&nbsp;Sandbox Diary</h1></header>
+
+    <div class="back" onclick="back()";><button>Back</button></div>
+    
+    <div class="box">
+        <h2 id="h">Preferences</h2>
+        <p>Text Size: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="size" onclick="size(1)">Tt</button> <button id="medium" onclick="size(2)">Tt</button> <button id="large" onclick="size(3)">Tt</button> </p>
+        
+        <p>Text Font: <button id="sans" onclick="font(1)">Arial</button> <button id="serif" onclick="font(2)">Times New Roman</button> </p>
+        <br>
+        <button id="dark" onclick="darkmode()">Dark Mode</button>
+        <br><br>
+        <button> Change Password</button>
+    </div>
+
+</body>
+
+</html>

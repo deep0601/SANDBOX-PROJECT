@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sandbox Diary: New Post</title>
+    <link rel="stylesheet" href="css/newpost.css" type="text/css">
+    <script src="js/posts.js"></script>
+</head>
+
+<body onload="settings()">
+
+    <header id="head"><button id="out" onclick="redirect2(1)";>Log out</button><h1 id="heade">&nbsp;&nbsp;&nbsp;Sandbox Diary</h1></header>
+  
+    <div class="back" onclick="redirect2(2)";><button id="backbut">Back</button></div>
+
+<form>
+    
+    <p>TITLE:</p>
+    <textarea rows="5" cols="100" id="title" value="tit"></textarea><br><br>
+    <p>CONTENT:</p>
+    <textarea rows="50" cols="100" id="content" value="con"></textarea> <br> <br>
+
+</form>
+
+
+    <!-- <input type="text" name="name" id="input"> 
+    <input type="content" name="data" id="input1">-->
+    <div id="newp"><button onclick="save()">Save</button>
+    <button onclick="redirect2(3)">View</button></div>
+   
+
+    <h2 id="output"></h2>
+    <h2 id="output2"></h2>
+
+</body>
+
+</html>
