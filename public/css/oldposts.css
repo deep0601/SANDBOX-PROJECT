@@ -1,0 +1,67 @@
+body{background-image: url("diary.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1300px 600px;}
+
+h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;}
+
+#output{
+    margin-top: 180px;
+}
+
+#out {float: right;}
+
+#post {
+    height: 350px;
+    width: 70%;
+    margin: auto;
+    border: 1px dotted black;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    overflow:scroll;
+}
+
+#output, #output2 {
+    text-align: justify;
+    margin-top: 0%;
+    font-size: 30px;}
+
+button {margin-right: 10px;
+    background-color: brown;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    border-radius: 10px;}
+
+#out, #backbut {padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #6366f1;
+    color: white;}
+
+.back {margin-left: 5%;
+    margin-top: 2%;}
+
+#heade {background-color: #6366f1;
+    margin-top: 0%;
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border: none;
+    opacity: 80%;}
+
+button:hover {background-color: #AB5555;}
+#out:hover, #backbut:hover { background-color: #8A8AF3;}
+
+#click {text-align: center;
+        margin: auto;
+        width: 30%;}
+
+.dark-mode {background-color: #142136;
+    color: white;}

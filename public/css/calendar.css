@@ -1,0 +1,191 @@
+body {background-color: #f5f5f5;}
+
+#forecastedDays {
+	background-color: #AEC2DC;
+	text-align: left;
+	font-size: 15px;
+	border: 3px solid #AEC2DC;
+	border-radius: 20px;
+	width: 35%;
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+#day1 {
+	text-align: left;
+	background-color: #AEC2DC;
+	border: 3px solid #AEC2DC;
+	border-radius: 20px;
+	width: 45%;
+	padding-left: 20px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+#day1, #day2, #day3, #day4, #day5 {line-height: 130%;}
+
+body {
+	font-family: Arial;
+}
+
+#calendar-container {
+	width: 500px;
+	border: 3px dashed rgb(135, 165, 201);
+	text-align: center;
+}
+#cal {float: right;
+	margin-right: 100px;}
+
+#calendar-header {
+	background-color: rgb(135, 165, 201);
+	font-weight: bold;
+	color: black;
+	position: relative;
+	padding: 25px;
+}
+
+td {
+	text-align: center;
+	padding: 25px;
+}
+
+td.clickable:hover {
+	background-color: grey;
+	color: black;
+	cursor: pointer;
+}
+
+td.today {
+	color: black;
+	background-color: #f1ef63;
+}
+
+table#calendar-dates {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #c4c4c4;
+	color: black;
+	padding: 3px;
+}
+
+.btn {
+	color: black;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+}
+
+.btn:hover {
+	color: rgb(204, 170, 51);
+	cursor: pointer;
+}
+
+.btn.prev-month {
+	left: 0;
+}
+
+.btn.next-month {
+	right: 0;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #888;
+	width: 500px;
+}
+
+.close {
+	color: rgb(34, 102, 34);
+	float: right;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+#tasksManager {
+	float: right;
+	margin-top: 10px;
+	width: 100px;
+}
+
+input {
+	border-radius: 25px;
+	height: 50px;
+	width: 500px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+#input {
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+#getWeather {
+	padding: 10px 10px 10px 10px;
+	margin-top: 12px;
+	margin-right: 30%;
+	background-color: #6366f1;
+	border: none;
+	cursor: pointer;
+	margin-left: 25px;
+	float: right;
+	font-size: 14px;
+}
+
+#getWeather:hover {background-color: #8A8AF3;}
+
+#out {float: right;}
+
+button {margin-right: 10px;
+    background-color: #6366f1;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 10px;}
+
+button:hover {background-color: #8A8AF3;}
+
+#Weather, #cityName {margin-left: 17px;}
+
+.back {margin-left: 5%;
+    margin-top: 2%;}
+#title, #city {text-align: center;}
+#cityInput {margin: 0%;
+		cursor: text;}
+
+.dark-mode {background-color: #142136;
+			color: white;}
